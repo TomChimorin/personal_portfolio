@@ -1,0 +1,153 @@
+ <section id = "about-section">
+        <div class="portfolio">
+            <h1>My</h1>
+            <h2>Portfolio</h2>
+        </div>
+        <div id="about" class="about">
+            <div class="image2">
+                <img src="/images/shibainu.png" class = "cat2">
+            </div> 
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            <div class="para">
+                <p>Soooo, where do I even start? Oh, hey there! Name's <br>Yu Zhao, call me Tom though. My life is pretty much <br>the same as everybody else. 
+                    I love playing video games,<br> practicing music (guitar) and LOVE Anime (yes, capita-<br>lization because it is superior). 
+                    Another thing, cats and <br>dogs...yah, as you can see, I am obsessed with them. <br>My socials are filled with them and I want one SO BAD.<br> 
+                    Anyways, I am currently a College student in Barrie, <br>Canada and I'm taking Computer Programming, <br>unfortunately. 
+                    Jokes aside, CMPA is starting to catch <br>onto me and I don't mind it. There's so much more to <br>explore in this field and I'm ready 
+                    to experience every <br>part of it. Anyways, more on that later. Since you've <br>finished reading this piece of text fellow human, go <br>on 
+                    and read more about my life in full. 
+                </p>
+            </div>
+
+            <div class="section-2">
+                <div class="title2">
+                    <h2>Sweet Teenage Years</h2>
+                </div>
+                <p>Why sweet, you may ask? Hmmmm, I'm not too sure either. The vague memories of my past are all ripped in half and discarded 
+                    in a unused section of my brain. All I remember is it consisted mostly of nostalgic and happy memories. Let's dive deeper 
+                    into my teenage life, starting with my childhood. 
+                </p>
+                <p>This is probably going to be the shortest part of content of my life 
+                    because I barely remember my childhood, which kinda sounds terrible, but I do recall a few that I hold dear in my heart. 
+                </p>
+                <p>
+                   I was born in Beijing China on the 28th of May 2005. The city always had dazzling sunshine and daisies blooming out of the 
+                   grass on sidewalks. During summer, it was the perfect time of season to go out and picnic. Although not many bits of memories 
+                   left of my childhood in China, I still and will always remember the welcoming sunlight in Beijing.
+                </p>
+                <p>
+                    I attended kindergarten there and boy oh boy was it my favorite part of my childhood. I always had a bright smile on my face 
+                    when mom took me to kindergarten. Every single day, I yearned to go to kindergarten. Now I'm not entirely sure if that was 
+                    because of the teachings there or just the environment. All in all, I loved kindergarten. I attended kindergarten for a few 
+                    years (most likely 3) and moved out to the Philippines.
+                </p>
+                <div class="image3">
+                    <img src="images/beijingChina.jpg" class = "beijingChina">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    CSS FOR THIS sunlight
+
+    
+.section-2{ 
+    display:grid;
+    grid-template-areas: "title title title title"
+                         "para1 para1 image image"
+                         "para2 para2 image image"
+                         "para3 para3 image image"
+                         "para4 para4 image image";
+}
+
+.title2{
+    position: absolute;
+    text-align: center;
+    left: 33%;
+    margin-top: 33%;
+}
+
+.para2 p:nth-of-type(1){
+    position: absolute;
+    left: 200px;
+    top: 110%;
+    width: 40%;
+    margin-top: 1rem;
+    grid-area:para1;
+}
+
+.para2 p:nth-of-type(2){
+    position: absolute;
+    left: 200px;
+    top: 120%;
+    width: 40%;
+    margin-top: 7rem;
+    grid-area:para2;
+
+}
+
+.para2 p:nth-of-type(3){
+    position: absolute;
+    left: 200px;
+    top: 130%;
+    width: 40%;
+    margin-top: 10rem;
+    grid-area:para3;
+}
+
+.para2 p:nth-of-type(4){
+    position: absolute;
+    left: 200px;
+    top: 142%;
+    width: 40%;
+    margin-top: 16rem;
+    grid-area:para4;
+}
+
+.image2 img{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    height: auto; 
+    width: auto;
+    top: 16.5rem;
+    left: 15rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.beijingChina{
+    margin-top: 50px;
+    position: absolute;
+    height: 80%; 
+    width: 35%;
+    top: 110%;
+    grid-area:image;
+}
+
+#about {
+    margin-left: 60%;
+    margin-top: 4%;
+}
+
+#about h2 {
+    color: rgb(28, 28, 29);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    position: absolute;
+    color: #000000;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    
+}
